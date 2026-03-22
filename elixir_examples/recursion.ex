@@ -19,7 +19,7 @@ receive do
 {:task, task} ->
 handle_task(state, task)
 :stop ->
-IO.inspect(state, label: "List of tasks when stopped")
+IO.inspect(state, label: "List of tasks when stoppedd")
 exit(:normal)
 end
 agent_loop(new_state)
